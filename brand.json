@@ -1,0 +1,27 @@
+{
+  "company": "Forma One Development",
+  "website": "https://forma1.agency",
+  "portalUrl": "https://invest.forma1.agency/login.html",
+  "bookingUrl": "https://tidycal.com/forma1agency",
+  "contactEmail": "invest@forma1.agency",
+  "address": "Forma One Development",
+  "assets": "https://invest.forma1.agency/email-assets",
+  "logo": "https://invest.forma1.agency/assets/forma-one-logo.png",
+  "logoWhite": "https://invest.forma1.agency/email-assets/logo-white.png",
+  "colors": {
+    "navy": "#0A2D6E",
+    "red": "#DA1F26",
+    "sky": "#7DB8E3",
+    "ink": "#16181C",
+    "body": "#3D3A37",
+    "muted": "#6B6560",
+    "paper": "#F7F5F2",
+    "line": "#E6E0D8",
+    "white": "#FFFFFF"
+  },
+  "fonts": {
+    "display": "'Libre Baskerville', Georgia, 'Times New Roman', serif",
+    "text": "Inter, 'Helvetica Neue', Arial, sans-serif",
+    "googleFonts": "https://fonts.googleapis.com/css2?family=Libre+Baskerville:wght@400;700&family=Inter:wght@400;600;700&display=swap"
+  }
+}

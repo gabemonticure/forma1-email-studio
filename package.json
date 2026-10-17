@@ -1,0 +1,21 @@
+{
+  "name": "forma1-email-studio",
+  "version": "1.0.0",
+  "description": "Forma One branded email builder: block-based investor emails, previewed locally and sent as SendFox drafts.",
+  "scripts": {
+    "build": "node scripts/build.js",
+    "preview": "node scripts/preview.js",
+    "sendfox": "node scripts/sendfox.js"
+  },
+  "author": "",
+  "license": "UNLICENSED",
+  "type": "commonjs",
+  "dependencies": {
+    "handlebars": "^4.7.8",
+    "mjml": "^4.15.3"
+  },
+  "private": true,
+  "engines": {
+    "node": ">=18"
+  }
+}

@@ -1,0 +1,94 @@
+{
+  "subject": "Q4 2025 Investor Update — Test Deal",
+  "preheader": "Occupancy up, NOI ahead of budget, and what's next for the project.",
+  "blocks": [
+    {
+      "type": "topbar",
+      "label": "INVESTOR UPDATE · Q4 2025"
+    },
+    {
+      "type": "hero",
+      "image": "https://invest.forma1.agency/email-assets/02-properties-hero.jpg",
+      "eyebrow": "QUARTERLY UPDATE",
+      "title": "A strong finish to the year",
+      "subtitle": "Test Deal delivered ahead of plan this quarter. Here's where things stand and what comes next.",
+      "button": {
+        "text": "View in your portal",
+        "url": "https://invest.forma1.agency/login.html"
+      }
+    },
+    {
+      "type": "intro",
+      "heading": "Dear Partners,",
+      "paragraphs": [
+        "We are pleased to share this update. The period delivered strong operational results, and we remain on track with our business plan.",
+        "Below you'll find the headline numbers, progress on site and our outlook for the coming quarter. As always, your full statements and documents are in the F1 Portal."
+      ],
+      "signoff": "— Gabe Monticure, Founder"
+    },
+    {
+      "type": "stats",
+      "title": "PERFORMANCE SNAPSHOT",
+      "items": [
+        {
+          "value": "95%",
+          "label": "OCCUPANCY",
+          "note": "▲ 3 pts"
+        },
+        {
+          "value": "+3.1%",
+          "label": "REVENUE VS BUDGET",
+          "note": "▲ ahead"
+        },
+        {
+          "value": "1.42x",
+          "label": "DEBT SERVICE COVERAGE",
+          "note": "▲ improving"
+        }
+      ]
+    },
+    {
+      "type": "spotlight",
+      "image": "https://invest.forma1.agency/email-assets/03-pipeline.jpg",
+      "imageAlt": "Homes being placed on site",
+      "eyebrow": "OPERATIONS",
+      "title": "Leasing momentum carried into Q4",
+      "text": "New leases outpaced move-outs every month this quarter, and renewals came in above our underwriting.",
+      "link": {
+        "text": "Read the full report",
+        "url": "https://invest.forma1.agency/login.html"
+      }
+    },
+    {
+      "type": "spotlight",
+      "imageRight": true,
+      "background": "#F7F5F2",
+      "image": "https://invest.forma1.agency/email-assets/04-deal-room.jpg",
+      "imageAlt": "Finished home interior",
+      "eyebrow": "CAPITAL IMPROVEMENTS",
+      "title": "Unit upgrades on time and on budget",
+      "text": "The interior upgrade program is 60% complete, with upgraded units leasing at a premium to the rest of the property."
+    },
+    {
+      "type": "quote",
+      "text": "Our focus for next quarter is simple: keep execution tight and keep you informed every step of the way.",
+      "author": "GABE MONTICURE, FOUNDER"
+    },
+    {
+      "type": "cta",
+      "title": "Questions about your investment?",
+      "text": "Book a call with the Forma One team or sign in to see your statements and documents.",
+      "button": {
+        "text": "Book a call",
+        "url": "https://tidycal.com/forma1agency"
+      },
+      "secondary": {
+        "text": "Open the Investor Portal",
+        "url": "https://invest.forma1.agency/login.html"
+      }
+    },
+    {
+      "type": "footer"
+    }
+  ]
+}

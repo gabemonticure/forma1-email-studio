@@ -1,0 +1,154 @@
+{{!--
+  Forma One email blocks. Each block is a Handlebars partial named by its "type" in an email's
+  JSON file. Inside a block, `this` is the block's own data and `@root.brand` is brand.json.
+  Every block is plain MJML, so it renders responsively in Gmail, Outlook and Apple Mail.
+--}}
+
+{{#*inline "topbar"}}
+<mj-section background-color="{{@root.brand.colors.navy}}" padding="18px 28px">
+  <mj-group>
+    <mj-column width="50%" vertical-align="middle">
+      <mj-image src="{{@root.brand.logoWhite}}" alt="Forma One" width="54px" align="left" href="{{@root.brand.website}}" />
+    </mj-column>
+    <mj-column width="50%" vertical-align="middle">
+      <mj-text align="right" color="{{@root.brand.colors.sky}}" font-size="11px" letter-spacing="2px" font-weight="700" css-class="caps">{{label}}</mj-text>
+    </mj-column>
+  </mj-group>
+</mj-section>
+{{/inline}}
+
+{{#*inline "hero"}}
+<mj-hero mode="fixed-height" height="{{#if height}}{{height}}{{else}}520px{{/if}}" background-width="1200px" background-height="800px"
+  background-url="{{image}}" background-color="{{@root.brand.colors.navy}}" vertical-align="bottom" padding="40px 40px 46px">
+  {{#if eyebrow}}<mj-text color="#FFFFFF" font-size="12px" letter-spacing="3px" font-weight="700" padding="0 0 12px">{{eyebrow}}</mj-text>{{/if}}
+  <mj-text mj-class="display" css-class="hero-title" color="#FFFFFF" font-size="46px" line-height="1.08" padding="0 0 14px">{{title}}</mj-text>
+  {{#if subtitle}}<mj-text color="#F2EFEA" font-size="17px" line-height="1.55" padding="0 0 22px">{{subtitle}}</mj-text>{{/if}}
+  {{#if button}}<mj-button href="{{button.url}}" background-color="{{@root.brand.colors.red}}" color="#FFFFFF" align="left" padding="0">{{button.text}}</mj-button>{{/if}}
+</mj-hero>
+<mj-section background-color="{{@root.brand.colors.red}}" padding="0"><mj-column><mj-spacer height="6px" /></mj-column></mj-section>
+{{/inline}}
+
+{{#*inline "intro"}}
+<mj-section background-color="#FFFFFF" padding="44px 44px 20px" css-class="stack-pad">
+  <mj-column>
+    {{#if heading}}<mj-text mj-class="display" color="{{@root.brand.colors.ink}}" font-size="26px" line-height="1.25" padding="0 0 16px">{{heading}}</mj-text>{{/if}}
+    {{#each paragraphs}}<mj-text padding="0 0 14px">{{{this}}}</mj-text>{{/each}}
+    {{#if signoff}}<mj-text padding="6px 0 0" color="{{@root.brand.colors.ink}}" font-weight="700">{{signoff}}</mj-text>{{/if}}
+  </mj-column>
+</mj-section>
+{{/inline}}
+
+{{#*inline "stats"}}
+<mj-section background-color="#FFFFFF" padding="10px 32px 8px">
+  <mj-column><mj-text align="center" color="{{@root.brand.colors.red}}" font-size="12px" letter-spacing="3px" font-weight="700" padding="10px 0 18px">{{title}}</mj-text></mj-column>
+</mj-section>
+<mj-section background-color="#FFFFFF" padding="0 28px 34px">
+  <mj-group>
+  {{#each items}}
+    <mj-column background-color="{{@root.brand.colors.paper}}" border-top="4px solid {{@root.brand.colors.navy}}" padding="0 6px" vertical-align="top">
+      <mj-text align="center" mj-class="display" color="{{@root.brand.colors.navy}}" font-size="30px" line-height="1.1" padding="22px 6px 6px">{{value}}</mj-text>
+      <mj-text align="center" color="{{@root.brand.colors.muted}}" font-size="10px" letter-spacing="1.5px" font-weight="700" padding="0 6px 6px">{{label}}</mj-text>
+      {{#if note}}<mj-text align="center" color="{{#if down}}{{@root.brand.colors.red}}{{else}}#1E7B3A{{/if}}" font-size="12px" font-weight="700" padding="0 6px 20px">{{note}}</mj-text>{{else}}<mj-spacer height="14px" />{{/if}}
+    </mj-column>
+  {{/each}}
+  </mj-group>
+</mj-section>
+{{/inline}}
+
+{{#*inline "spotlight"}}
+<mj-section background-color="{{#if background}}{{background}}{{else}}#FFFFFF{{/if}}" padding="34px 28px" direction="{{#if imageRight}}rtl{{else}}ltr{{/if}}">
+  <mj-column width="50%" vertical-align="middle" padding="0 12px">
+    <mj-image src="{{image}}" alt="{{imageAlt}}" border-radius="6px" />
+  </mj-column>
+  <mj-column width="50%" vertical-align="middle" padding="0 12px">
+    {{#if eyebrow}}<mj-text color="{{@root.brand.colors.red}}" font-size="11px" letter-spacing="2.5px" font-weight="700" padding="18px 0 10px">{{eyebrow}}</mj-text>{{/if}}
+    <mj-text mj-class="display" color="{{@root.brand.colors.ink}}" font-size="24px" line-height="1.25" padding="0 0 12px">{{title}}</mj-text>
+    <mj-text font-size="15px" padding="0 0 16px">{{{text}}}</mj-text>
+    {{#if link}}<mj-text padding="0" font-size="13px" font-weight="700" letter-spacing="1px"><a href="{{link.url}}" style="color:{{@root.brand.colors.navy}};text-decoration:none;border-bottom:2px solid {{@root.brand.colors.red}};">{{link.text}} &rarr;</a></mj-text>{{/if}}
+  </mj-column>
+</mj-section>
+{{/inline}}
+
+{{#*inline "gallery"}}
+<mj-section background-color="#FFFFFF" padding="30px 28px 6px">
+  <mj-column>
+    {{#if title}}<mj-text mj-class="display" align="center" color="{{@root.brand.colors.ink}}" font-size="24px" padding="0 0 6px">{{title}}</mj-text>{{/if}}
+    {{#if caption}}<mj-text align="center" color="{{@root.brand.colors.muted}}" font-size="14px" padding="0 0 14px">{{caption}}</mj-text>{{/if}}
+  </mj-column>
+</mj-section>
+<mj-section background-color="#FFFFFF" padding="0 22px 30px">
+  {{#each images}}
+  <mj-column width="50%" padding="6px">
+    <mj-image src="{{url}}" alt="{{alt}}" border-radius="6px" />
+    {{#if label}}<mj-text color="{{@root.brand.colors.muted}}" font-size="12px" padding="8px 2px 0">{{label}}</mj-text>{{/if}}
+  </mj-column>
+  {{/each}}
+</mj-section>
+{{/inline}}
+
+{{#*inline "quote"}}
+<mj-section background-color="#EAF3FA" padding="40px 44px" css-class="stack-pad" border-left="6px solid {{@root.brand.colors.red}}">
+  <mj-column>
+    <mj-text mj-class="display" color="{{@root.brand.colors.navy}}" font-size="23px" line-height="1.45" font-style="italic" padding="0 0 14px">&ldquo;{{text}}&rdquo;</mj-text>
+    <mj-text color="{{@root.brand.colors.muted}}" font-size="13px" font-weight="700" letter-spacing="1px">{{author}}</mj-text>
+  </mj-column>
+</mj-section>
+{{/inline}}
+
+{{#*inline "progress"}}
+<mj-section background-color="#FFFFFF" padding="36px 44px 30px" css-class="stack-pad">
+  <mj-column>
+    <mj-text color="{{@root.brand.colors.red}}" font-size="12px" letter-spacing="3px" font-weight="700" padding="0 0 8px">{{eyebrow}}</mj-text>
+    <mj-text mj-class="display" color="{{@root.brand.colors.ink}}" font-size="24px" padding="0 0 18px">{{title}}</mj-text>
+    {{#if percent}}
+    <mj-text padding="0 0 6px" font-size="13px" color="{{@root.brand.colors.muted}}"><strong style="color:{{@root.brand.colors.navy}};font-size:20px;">{{percent}}%</strong>&nbsp; {{percentLabel}}</mj-text>
+    <mj-table padding="0 0 22px" cellpadding="0" cellspacing="0" width="100%">
+      <tr><td style="background:{{@root.brand.colors.navy}};height:10px;width:{{percent}}%;border-radius:5px 0 0 5px;"></td><td style="background:{{@root.brand.colors.line}};height:10px;border-radius:0 5px 5px 0;"></td></tr>
+    </mj-table>
+    {{/if}}
+    <mj-table padding="0" cellpadding="0" cellspacing="0" width="100%">
+      {{#each steps}}
+      <tr>
+        <td style="width:34px;padding:10px 0;vertical-align:top;font-size:16px;color:{{#if done}}#1E7B3A{{else}}{{@root.brand.colors.line}}{{/if}};">{{#if done}}&#10004;{{else}}&#9675;{{/if}}</td>
+        <td style="padding:10px 0;border-bottom:1px solid {{@root.brand.colors.line}};font-family:{{@root.brand.fonts.text}};font-size:15px;color:{{@root.brand.colors.ink}};"><strong>{{name}}</strong>{{#if date}}<span style="color:{{@root.brand.colors.muted}};font-size:13px;"> &nbsp;·&nbsp; {{date}}</span>{{/if}}</td>
+      </tr>
+      {{/each}}
+    </mj-table>
+  </mj-column>
+</mj-section>
+{{/inline}}
+
+{{#*inline "cta"}}
+<mj-section background-color="{{@root.brand.colors.navy}}" padding="46px 40px" css-class="stack-pad">
+  <mj-column>
+    <mj-text align="center" mj-class="display" color="#FFFFFF" font-size="28px" line-height="1.25" padding="0 0 12px">{{title}}</mj-text>
+    {{#if text}}<mj-text align="center" color="#D6E4F2" font-size="15px" padding="0 0 24px">{{text}}</mj-text>{{/if}}
+    <mj-button href="{{button.url}}" background-color="{{@root.brand.colors.red}}" color="#FFFFFF">{{button.text}}</mj-button>
+    {{#if secondary}}<mj-text align="center" padding="16px 0 0" font-size="13px"><a href="{{secondary.url}}" style="color:{{@root.brand.colors.sky}};text-decoration:none;font-weight:700;">{{secondary.text}} &rarr;</a></mj-text>{{/if}}
+  </mj-column>
+</mj-section>
+{{/inline}}
+
+{{#*inline "divider"}}
+<mj-section background-color="#FFFFFF" padding="4px 44px"><mj-column><mj-divider border-color="{{@root.brand.colors.line}}" border-width="1px" padding="0" /></mj-column></mj-section>
+{{/inline}}
+
+{{#*inline "footer"}}
+<mj-section background-color="{{@root.brand.colors.ink}}" padding="34px 36px 30px">
+  <mj-column>
+    <mj-image src="{{@root.brand.logoWhite}}" alt="Forma One" width="44px" padding="0 0 14px" href="{{@root.brand.website}}" />
+    <mj-text align="center" color="#C9C4BD" font-size="13px" padding="0 0 6px"><strong style="color:#FFFFFF;">{{@root.brand.company}}</strong></mj-text>
+    <mj-text align="center" font-size="12px" padding="0 0 16px">
+      <a href="{{@root.brand.website}}" style="color:{{@root.brand.colors.sky}};text-decoration:none;">forma1.agency</a> &nbsp;·&nbsp;
+      <a href="{{@root.brand.portalUrl}}" style="color:{{@root.brand.colors.sky}};text-decoration:none;">Investor Portal</a> &nbsp;·&nbsp;
+      <a href="{{@root.brand.bookingUrl}}" style="color:{{@root.brand.colors.sky}};text-decoration:none;">Book a call</a> &nbsp;·&nbsp;
+      <a href="mailto:{{@root.brand.contactEmail}}" style="color:{{@root.brand.colors.sky}};text-decoration:none;">{{@root.brand.contactEmail}}</a>
+    </mj-text>
+    <mj-text align="center" color="#8A8580" font-size="10.5px" line-height="1.6">{{#if disclaimer}}{{disclaimer}}{{else}}This message is for informational purposes only and is not an offer to sell or a solicitation of an offer to buy any security. Any offering is made only to accredited investors through the offering documents. Projected returns are targets, not guarantees; investing involves risk, including loss of principal.{{/if}}</mj-text>
+  </mj-column>
+</mj-section>
+{{/inline}}
+
+{{#> layout}}
+{{#each blocks}}{{> (lookup . "type") }}{{/each}}
+{{/layout}}

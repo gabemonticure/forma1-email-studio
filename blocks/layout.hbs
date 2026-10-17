@@ -1,0 +1,25 @@
+<mjml>
+  <mj-head>
+    <mj-title>{{subject}}</mj-title>
+    <mj-preview>{{preheader}}</mj-preview>
+    <mj-font name="Libre Baskerville" href="{{brand.fonts.googleFonts}}" />
+    <mj-attributes>
+      <mj-all font-family="{{brand.fonts.text}}" />
+      <mj-class name="display" font-family="{{brand.fonts.display}}" />
+      <mj-text color="{{brand.colors.body}}" font-size="16px" line-height="1.65" padding="0" />
+      <mj-section padding="0" />
+      <mj-column padding="0" />
+      <mj-image padding="0" />
+      <mj-button font-family="{{brand.fonts.text}}" font-weight="700" font-size="14px" letter-spacing="1.5px" text-transform="uppercase" border-radius="4px" inner-padding="16px 34px" />
+    </mj-attributes>
+    <mj-style>
+      @media only screen and (max-width: 480px) {
+        .hero-title div { font-size: 34px !important; line-height: 1.15 !important; }
+        .stack-pad { padding: 28px 22px !important; }
+      }
+    </mj-style>
+  </mj-head>
+  <mj-body background-color="{{brand.colors.paper}}" width="640px">
+    {{> @partial-block }}
+  </mj-body>
+</mjml>

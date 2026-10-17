@@ -1,0 +1,89 @@
+{
+  "subject": "Introducing our newest project",
+  "preheader": "A first look at the project, the plan and how to request access.",
+  "blocks": [
+    {
+      "type": "topbar",
+      "label": "NEW OPPORTUNITY"
+    },
+    {
+      "type": "hero",
+      "image": "https://invest.forma1.agency/email-assets/01-dashboard-hero.jpg",
+      "eyebrow": "NOW RAISING",
+      "title": "[Project Name]",
+      "subtitle": "[City, State] · Manufactured housing community built faster, more sustainably and at a fraction of the cost.",
+      "button": {
+        "text": "Request access",
+        "url": "https://invest.forma1.agency/login.html"
+      }
+    },
+    {
+      "type": "intro",
+      "heading": "A first look",
+      "paragraphs": [
+        "We're excited to share our newest project with our investor community. Here's a short overview; the full offering details are available in the F1 Portal once you request access."
+      ]
+    },
+    {
+      "type": "stats",
+      "title": "TARGET RETURNS",
+      "items": [
+        {
+          "value": "20%",
+          "label": "TARGET IRR"
+        },
+        {
+          "value": "2.5x",
+          "label": "EQUITY MULTIPLE"
+        },
+        {
+          "value": "$50K",
+          "label": "MINIMUM"
+        }
+      ]
+    },
+    {
+      "type": "gallery",
+      "title": "The project",
+      "caption": "Renderings and site photos",
+      "images": [
+        {
+          "url": "https://invest.forma1.agency/email-assets/02-properties.jpg",
+          "alt": "Site",
+          "label": "Site plan"
+        },
+        {
+          "url": "https://invest.forma1.agency/email-assets/03-pipeline.jpg",
+          "alt": "Construction",
+          "label": "Factory-built homes"
+        },
+        {
+          "url": "https://invest.forma1.agency/email-assets/04-deal-room.jpg",
+          "alt": "Interior",
+          "label": "Interiors"
+        },
+        {
+          "url": "https://invest.forma1.agency/email-assets/07-commitments.jpg",
+          "alt": "Community",
+          "label": "Community"
+        }
+      ]
+    },
+    {
+      "type": "cta",
+      "title": "Interested in this project?",
+      "text": "Request access in the Investor Portal and our team will reach out to talk through the details.",
+      "button": {
+        "text": "Request access",
+        "url": "https://invest.forma1.agency/login.html"
+      },
+      "secondary": {
+        "text": "Or book a call",
+        "url": "https://tidycal.com/forma1agency"
+      }
+    },
+    {
+      "type": "footer"
+    }
+  ]
+}
