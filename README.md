@@ -55,7 +55,7 @@ npm run sendfox -- draft quarterly-update --list 12345
 4. Open SendFox → **Emails**, review the draft, **send yourself a test**, then send or schedule it there.
    (`npm run sendfox -- send <campaignId>` also works and asks you to type SEND to confirm.)
 
-SendFox adds its own unsubscribe footer and physical address to every campaign, as required by anti-spam law.
+SendFox requires every email to contain an unsubscribe link using `{{unsubscribe_url}}`; the `footer` block includes it, so always end emails with a footer.
 
 ## Build only
 
