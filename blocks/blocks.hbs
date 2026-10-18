@@ -56,13 +56,13 @@
 {{/inline}}
 
 {{#*inline "spotlight"}}
-<mj-section background-color="{{#if background}}{{background}}{{else}}#FFFFFF{{/if}}" padding="34px 28px" direction="{{#if imageRight}}rtl{{else}}ltr{{/if}}">
-  <mj-column width="50%" vertical-align="middle" padding="0 12px">
+<mj-section background-color="{{#if background}}{{background}}{{else}}#FFFFFF{{/if}}" padding="34px 16px" direction="{{#if imageRight}}rtl{{else}}ltr{{/if}}">
+  <mj-column width="60%" vertical-align="middle" padding="0 10px">
     <mj-image src="{{image}}" alt="{{imageAlt}}" border-radius="6px" />
   </mj-column>
-  <mj-column width="50%" vertical-align="middle" padding="0 12px">
+  <mj-column width="40%" vertical-align="middle" padding="0 10px">
     {{#if eyebrow}}<mj-text color="{{@root.brand.colors.red}}" font-size="11px" letter-spacing="2.5px" font-weight="700" padding="18px 0 10px">{{eyebrow}}</mj-text>{{/if}}
-    <mj-text mj-class="display" color="{{@root.brand.colors.ink}}" font-size="24px" line-height="1.25" padding="0 0 12px">{{title}}</mj-text>
+    <mj-text mj-class="display" color="{{@root.brand.colors.ink}}" font-size="22px" line-height="1.25" padding="0 0 12px">{{title}}</mj-text>
     <mj-text font-size="15px" padding="0 0 16px">{{{text}}}</mj-text>
     {{#if link}}<mj-text padding="0" font-size="13px" font-weight="700" letter-spacing="1px"><a href="{{link.url}}" style="color:{{@root.brand.colors.navy}};text-decoration:none;border-bottom:2px solid {{@root.brand.colors.red}};">{{link.text}} &rarr;</a></mj-text>{{/if}}
   </mj-column>

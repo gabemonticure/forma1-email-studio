@@ -15,7 +15,7 @@ Edit any file in `emails/`, save, and refresh the preview.
 
 ## Make a new email
 
-1. Copy a starter in `emails/` (for example `quarterly-update.json`) and rename it.
+1. Copy a starter in `emails/` (for example `monthly-update.json`) and rename it.
 2. Change the `subject`, `preheader` (the grey preview line in the inbox) and the blocks.
 3. Check it in the preview, on desktop and phone width.
 
@@ -49,7 +49,7 @@ Email images must be on a public web address and should be **under ~150 KB** (12
 
 ```bash
 npm run sendfox -- lists
-npm run sendfox -- draft quarterly-update --list 12345
+npm run sendfox -- draft monthly-update --list 12345
 ```
 
 4. Open SendFox → **Emails**, review the draft, **send yourself a test**, then send or schedule it there.

@@ -1,17 +1,17 @@
 {
-  "subject": "Q4 2025 Investor Update — Test Deal",
-  "preheader": "Occupancy up, NOI ahead of budget, and what's next for the project.",
+  "subject": "[Month YYYY] Investor Update — [Project Name]",
+  "preheader": "This month on site: progress photos, key numbers and what comes next.",
   "blocks": [
     {
       "type": "topbar",
-      "label": "INVESTOR UPDATE · Q4 2025"
+      "label": "MONTHLY UPDATE · [MONTH YYYY]"
     },
     {
       "type": "hero",
       "image": "https://invest.forma1.agency/email-assets/02-properties-hero.jpg",
-      "eyebrow": "QUARTERLY UPDATE",
-      "title": "A strong finish to the year",
-      "subtitle": "Test Deal delivered ahead of plan this quarter. Here's where things stand and what comes next.",
+      "eyebrow": "MONTHLY UPDATE",
+      "title": "[Headline for the month]",
+      "subtitle": "[Project Name] — a quick look at this month's progress and what comes next.",
       "button": {
         "text": "View in your portal",
         "url": "https://invest.forma1.agency/login.html"
@@ -22,7 +22,7 @@
       "heading": "Dear Partners,",
       "paragraphs": [
         "We are pleased to share this update. The period delivered strong operational results, and we remain on track with our business plan.",
-        "Below you'll find the headline numbers, progress on site and our outlook for the coming quarter. As always, your full statements and documents are in the F1 Portal."
+        "Below you'll find the headline numbers, progress on site and our outlook for the coming month. As always, your full statements and documents are in the F1 Portal."
       ],
       "signoff": "— Gabe Monticure, Founder"
     },
@@ -50,10 +50,10 @@
     {
       "type": "spotlight",
       "image": "https://invest.forma1.agency/email-assets/03-pipeline.jpg",
-      "imageAlt": "Homes being placed on site",
+      "imageAlt": "[Describe this month's operations photo]",
       "eyebrow": "OPERATIONS",
-      "title": "Leasing momentum carried into Q4",
-      "text": "New leases outpaced move-outs every month this quarter, and renewals came in above our underwriting.",
+      "title": "[Operations headline]",
+      "text": "[What happened this month on operations and leasing.]",
       "link": {
         "text": "Read the full report",
         "url": "https://invest.forma1.agency/login.html"
@@ -64,10 +64,10 @@
       "imageRight": true,
       "background": "#F7F5F2",
       "image": "https://invest.forma1.agency/email-assets/04-deal-room.jpg",
-      "imageAlt": "Finished home interior",
+      "imageAlt": "[Describe this month's construction photo]",
       "eyebrow": "CAPITAL IMPROVEMENTS",
-      "title": "Unit upgrades on time and on budget",
-      "text": "The interior upgrade program is 60% complete, with upgraded units leasing at a premium to the rest of the property."
+      "title": "[Capital improvements headline]",
+      "text": "[Progress on construction and improvements this month.]"
     },
     {
       "type": "quote",
