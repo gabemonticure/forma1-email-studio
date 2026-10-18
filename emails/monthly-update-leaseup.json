@@ -1,0 +1,99 @@
+{
+  "subject": "[Month YYYY] Lease-Up Update — [Project Name]",
+  "preheader": "Leasing progress, occupancy and rents this month at [Project Name].",
+  "blocks": [
+    {
+      "type": "topbar",
+      "label": "MONTHLY UPDATE · LEASE-UP · [MONTH YYYY]"
+    },
+    {
+      "type": "hero",
+      "image": "https://invest.forma1.agency/email-assets/02-properties-hero.jpg",
+      "eyebrow": "LEASE-UP UPDATE",
+      "title": "[Headline for the month]",
+      "subtitle": "[Project Name] — leasing progress, rents and what comes next this month.",
+      "button": {
+        "text": "View in your portal",
+        "url": "https://invest.forma1.agency/login.html"
+      }
+    },
+    {
+      "type": "intro",
+      "heading": "Dear Partners,",
+      "paragraphs": [
+        "Here is this month's lease-up update for [Project Name]. [One or two sentences on how leasing went overall.]",
+        "Below are the leasing numbers, highlights from the property and our outlook for next month. Your full statements and documents are in the F1 Portal."
+      ],
+      "signoff": "— Gabe Monticure, Founder"
+    },
+    {
+      "type": "stats",
+      "title": "LEASING SNAPSHOT",
+      "items": [
+        {
+          "value": "[88%]",
+          "label": "OCCUPANCY",
+          "note": "[▲ 6 pts]"
+        },
+        {
+          "value": "[93%]",
+          "label": "PRE-LEASED",
+          "note": "[▲ 4 pts]"
+        },
+        {
+          "value": "[14]",
+          "label": "LEASES SIGNED",
+          "note": "[this month]"
+        },
+        {
+          "value": "[+4%]",
+          "label": "RENT VS PLAN",
+          "note": "[▲ ahead]"
+        }
+      ]
+    },
+    {
+      "type": "spotlight",
+      "image": "https://invest.forma1.agency/email-assets/03-pipeline.jpg",
+      "imageAlt": "[Describe this month's leasing photo]",
+      "eyebrow": "LEASING",
+      "title": "[Leasing headline]",
+      "text": "[Traffic, applications, leases signed and move-ins this month.]",
+      "link": {
+        "text": "See the full report",
+        "url": "https://invest.forma1.agency/login.html"
+      }
+    },
+    {
+      "type": "spotlight",
+      "imageRight": true,
+      "background": "#F7F5F2",
+      "image": "https://invest.forma1.agency/email-assets/04-deal-room.jpg",
+      "imageAlt": "[Describe this month's property photo]",
+      "eyebrow": "PROPERTY & RESIDENTS",
+      "title": "[Operations headline]",
+      "text": "[Renewals, resident experience, amenities and any operating items.]"
+    },
+    {
+      "type": "quote",
+      "text": "[A short note from the team on the month and the road to stabilization.]",
+      "author": "GABE MONTICURE, FOUNDER"
+    },
+    {
+      "type": "cta",
+      "title": "Questions about your investment?",
+      "text": "Book a call with the Forma One team or sign in to see your statements and documents.",
+      "button": {
+        "text": "Book a call",
+        "url": "https://tidycal.com/forma1agency"
+      },
+      "secondary": {
+        "text": "Open the Investor Portal",
+        "url": "https://invest.forma1.agency/login.html"
+      }
+    },
+    {
+      "type": "footer"
+    }
+  ]
+}

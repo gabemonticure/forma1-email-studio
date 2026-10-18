@@ -9,6 +9,8 @@ const brand = () => JSON.parse(fs.readFileSync(path.join(ROOT, 'brand.json'), 'u
 
 function compile() {
   const hb = Handlebars.create();
+  // Stats bands with 4 KPIs use smaller numbers so values like 'On budget' stay on one line
+  hb.registerHelper('statSize', (items) => (Array.isArray(items) && items.length > 3 ? '22px' : '30px'));
   hb.registerPartial('layout', fs.readFileSync(path.join(ROOT, 'blocks', 'layout.hbs'), 'utf8'));
   return hb.compile(fs.readFileSync(path.join(ROOT, 'blocks', 'blocks.hbs'), 'utf8'), { strict: false });
 }

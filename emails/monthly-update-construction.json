@@ -1,0 +1,142 @@
+{
+  "subject": "[Month YYYY] Construction Update — [Project Name]",
+  "preheader": "Progress photos, schedule and budget this month at [Project Name].",
+  "blocks": [
+    {
+      "type": "topbar",
+      "label": "MONTHLY UPDATE · CONSTRUCTION · [MONTH YYYY]"
+    },
+    {
+      "type": "hero",
+      "image": "https://invest.forma1.agency/email-assets/03-pipeline-hero.jpg",
+      "eyebrow": "CONSTRUCTION UPDATE",
+      "title": "[Headline for the month]",
+      "subtitle": "[Project Name] — this month's progress on site and in the factory.",
+      "button": {
+        "text": "View in your portal",
+        "url": "https://invest.forma1.agency/login.html"
+      }
+    },
+    {
+      "type": "intro",
+      "heading": "Dear Partners,",
+      "paragraphs": [
+        "Here is this month's construction update for [Project Name]. [One or two sentences on overall progress.]",
+        "Below are the key numbers, photos from site and what we expect next month. Your full documents are in the F1 Portal."
+      ],
+      "signoff": "— Gabe Monticure, Founder"
+    },
+    {
+      "type": "stats",
+      "title": "CONSTRUCTION SNAPSHOT",
+      "items": [
+        {
+          "value": "[62%]",
+          "label": "COMPLETE",
+          "note": "[▲ 8 pts]"
+        },
+        {
+          "value": "[38/64]",
+          "label": "HOMES DELIVERED",
+          "note": "[+9 this month]"
+        },
+        {
+          "value": "[On time]",
+          "label": "SCHEDULE",
+          "note": "[target Q2 2026]"
+        },
+        {
+          "value": "[48%]",
+          "label": "BUDGET SPENT",
+          "note": "[on budget]"
+        }
+      ]
+    },
+    {
+      "type": "progress",
+      "eyebrow": "MILESTONES",
+      "title": "Where we are",
+      "percent": 62,
+      "percentLabel": "[of construction complete]",
+      "steps": [
+        {
+          "name": "[Land closed & entitlements]",
+          "date": "[Q1 2025]",
+          "done": true
+        },
+        {
+          "name": "[Site infrastructure]",
+          "date": "[Q2 2025]",
+          "done": true
+        },
+        {
+          "name": "[Home production]",
+          "date": "[Q3 2025]",
+          "done": true
+        },
+        {
+          "name": "[Placement & finishing]",
+          "date": "[Q4 2025]"
+        },
+        {
+          "name": "[Certificate of occupancy]",
+          "date": "[Q1 2026]"
+        }
+      ]
+    },
+    {
+      "type": "spotlight",
+      "image": "https://invest.forma1.agency/email-assets/02-properties.jpg",
+      "imageAlt": "[Describe this month's site photo]",
+      "eyebrow": "ON SITE",
+      "title": "[Site work headline]",
+      "text": "[Site work, utilities, foundations and home placement this month.]",
+      "link": {
+        "text": "See all progress photos",
+        "url": "https://invest.forma1.agency/login.html"
+      }
+    },
+    {
+      "type": "spotlight",
+      "imageRight": true,
+      "background": "#F7F5F2",
+      "image": "https://invest.forma1.agency/email-assets/08-distributions.jpg",
+      "imageAlt": "[Describe this month's factory photo]",
+      "eyebrow": "IN THE FACTORY",
+      "title": "[Production headline]",
+      "text": "[Homes built, inspections passed and deliveries scheduled.]"
+    },
+    {
+      "type": "gallery",
+      "title": "More from this month",
+      "images": [
+        {
+          "url": "https://invest.forma1.agency/email-assets/07-commitments.jpg",
+          "alt": "[Progress photo]",
+          "label": "[Caption]"
+        },
+        {
+          "url": "https://invest.forma1.agency/email-assets/01-dashboard.jpg",
+          "alt": "[Progress photo]",
+          "label": "[Caption]"
+        }
+      ]
+    },
+    {
+      "type": "cta",
+      "title": "Questions about your investment?",
+      "text": "Book a call with the Forma One team or sign in to see your statements and documents.",
+      "button": {
+        "text": "Book a call",
+        "url": "https://tidycal.com/forma1agency"
+      },
+      "secondary": {
+        "text": "Open the Investor Portal",
+        "url": "https://invest.forma1.agency/login.html"
+      }
+    },
+    {
+      "type": "footer"
+    }
+  ]
+}
